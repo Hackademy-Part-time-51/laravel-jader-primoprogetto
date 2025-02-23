@@ -17,11 +17,11 @@
     @foreach ($services as $service )
         <div class="card mb-4  rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">{{$titolo}}</h4>
+            <h4 class="my-0 fw-normal">{{$service['title']}}</h4>
           </div>
           <div class="card-body">
-            <h2 class="card-title pricing-card-title"><small class="text-body-secondary fw-light">{{$service}}</small></h2>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary"><a href="/servizio/{{$service}}">Vai sul link {{$service}} </a></button>
+            <h2 class="card-title pricing-card-title"><small class="text-body-secondary fw-light">{{$service['price']}}</small></h2>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary"><a href="/servizio/{{$service['slug']}}">Vai sul link {{$service['title']}} </a></button>
           </div>
         </div>
         @endforeach
