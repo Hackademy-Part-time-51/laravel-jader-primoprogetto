@@ -14,15 +14,16 @@
 <body>
   <h1 class="text-center pb-1"><a href="/">Torna alla homepage</a></h1>
   
-  <div class="container">
+  <div class="container bg-body-tertiary border rounded-3">
     <div class="row">
-      <h1 class="text-center py-2">{{$service['title']}}</h1>
+      <h2 class=" py-2">{{$service['title']}}</h2>
     </div>
     <div class="row">
-      <h3 class="text-center">{{$service['description'] }}</h3>
-      <h3 class="text-center">{{$service['price'] }}</h3>
-      <h1 class="text-center pb-1"><a href="/servizi">Sfoglia il catalogo dei servizi</a></h1>
+      <h3 class="">{{$service['description'] }}</h3>
+      <h3 class="">{{$service['price'] }}</h3>
     </div>
+  </div>
+    <h3 class="text-center py-3 "><a href="/servizi">Sfoglia il catalogo dei servizi</a></h3>
     
     
     
